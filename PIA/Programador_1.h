@@ -19,9 +19,9 @@ void Suma()
     // crear matrices
     cout << "ingrese dimension de las matrices: ";
     cin >> dim;
-    float A_suma[dim][dim];
-    float B_suma[dim][dim];
-    float R_suma[dim][dim];
+    float A_suma[10][10];
+    float B_suma[10][10];
+    float R_suma[10][10];
     // llenar A
     cout << "Matriz A\n";
     for (int i = 0; i < dim;)
@@ -80,9 +80,9 @@ void Resta()
     // crear matrices
     cout << "ingrese dimension de las matrices: ";
     cin >> dim;
-    float A_resta[dim][dim];
-    float B_resta[dim][dim];
-    float R_resta[dim][dim];
+    float A_resta[10][10];
+    float B_resta[10][10];
+    float R_resta[10][10];
     // llenar A
     cout << "Matriz A\n";
     for (int i = 0; i < dim;)
