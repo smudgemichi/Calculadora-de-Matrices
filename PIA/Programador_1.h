@@ -212,31 +212,117 @@ void Multiplicacion()
 
 void zperspectiva()
 {
-    float zperp, x, y, z;
-    system("cls");
-    cout << "==============================================================\n";
+     float zperp, x, y, z;
+                    system("clear");
+                    cout << "=======================================================\n";
 
-    cout << "=== Obtener la perspectiva de los puntos originales ===\n\n";
-    cout << "Ingrese el valor de Z-perspectiva: ";
-    cin >> zperp;
-    cout << "Ingrese el punto\n\n";
-    cout << "\t[ x,y,z ]\n\n";
-    cout << "x= ";
-    cin >> x;
+                    cout << "=== Obtener la perspectiva de los puntos originales ===\n\n";
+                    cout << "Ingrese el valor de Z-perspectiva: ";
+                    cin >> zperp;
+                    int sn = 0,cont=1;
+                    do
+                    {
+                        cout << "=======================================================\n";
+                        cout << "Ingrese el punto #"<<cont<<endl<<endl;
+                        cout << "\t[ x,y,z ]\n\n";
+                        cout << "x= ";
+                        cin >> x;
 
-    cout << "y= ";
-    cin >> y;
+                        cout << "y= ";
+                        cin >> y;
 
-    cout << "z= ";
-    cin >> z;
-    cout << endl;
-    cout << "--------------------------------------------------------------\n";
-    cout << "Punto original: \n\n";
-    printf("\t[ %0.2f , %0.2f , %0.2f ]\n\n", x, y, z);
-    cout << "--------------------------------------------------------------\n";
-    cout << "\nPunto Z-perspectiva: \n\n";
-    x = x * (zperp / (zperp - z));
-    y = y * (zperp / (zperp - z));
-    printf("\t[ %0.2f , %0.2f ]\n", x, y);
-    cout << "==============================================================\n\n\n";
+                        cout << "z= ";
+                        cin >> z;
+                        cout << endl;
+                        cout << "--------------------------------------------------------------\n";
+                        cout << "Punto original: \n\n";
+                        printf("\t[ %0.5f , %0.5f , %0.5f ]\n\n", x, y, z);
+                        cout << "--------------------------------------------------------------\n";
+                        cout << "\nPunto Z-perspectiva: \n\n";
+                        x = x * (zperp / (zperp - z));
+                        y = y * (zperp / (zperp - z));
+                        printf("\t[ %0.5f , %0.5f ]\n", x, y);
+
+                        cout << "--------------------------------------------------------------\n";
+                        cout << "¿Desea hacer otro punto? \n\n";
+                        cout << "1.- si\n";
+                        cout << "2.- no \n\n";
+                        cin >> sn;
+                        cont++;
+                        cout <<"\n";
+
+                    } while (sn != 2);
+                    cout << "==============================================================\n\n\n";
+}
+
+void MatricesRotacion()
+{
+      float sinR, cosR, grad, rad; // seno coseno
+                        float pi = M_PI;
+     system("clear");
+
+                        cout << "=== MATRICES DE ROTACION ===\n";
+
+                        cout << "¿Cuantos grados deseas rotarlo?" << endl;
+                        cin >> grad;
+                        // RADIANES
+                        rad = grad * (pi / 180.0);
+
+                        sinR = sin(rad);
+                        cosR = cos(rad);
+
+                        float X_axis[4][4] = {
+                            {1, 0, 0, 0},
+                            {0, cosR, -sinR, 0},
+                            {0, sinR, cosR, 0},
+                            {0, 0, 0, 1}};
+                        float Y_axis[4][4] = {
+                            {cosR, 0, sinR, 0},
+                            {0, 1, 0, 0},
+                            {-sinR, 0, cosR, 0},
+                            {0, 0, 0, 1}};
+                        float Z_axis[4][4] = {
+                            {cosR, -sinR, 0, 0},
+                            {sinR, cosR, 0, 0},
+                            {0, 0, 1, 0},
+                            {0, 0, 0, 1}};
+                        cout << "=== Matriz Rotación X ===";
+                        cout << endl
+                             << endl;
+                        for (int i = 0; i < 4; i++)
+                        {
+                            for (int j = 0; j < 4; j++)
+                            {
+                                cout << X_axis[i][j] << "\t";
+                            }
+                            cout << endl
+                                 << endl
+                                 << endl;
+                        }
+                        cout << "=== Matriz Rotación Y ===";
+                        cout << endl
+                             << endl;
+                        for (int i = 0; i < 4; i++)
+                        {
+                            for (int j = 0; j < 4; j++)
+                            {
+                                cout << Y_axis[i][j] << "\t";
+                            }
+                            cout << endl
+                                 << endl
+                                 << endl;
+                        }
+                        cout << "=== Matriz Rotación Z ===";
+                        cout << endl
+                             << endl;
+                        for (int i = 0; i < 4; i++)
+                        {
+                            for (int j = 0; j < 4; j++)
+                            {
+                                cout << Z_axis[i][j] << "\t";
+                            }
+                            cout << endl
+                                 << endl
+                                 << endl;
+                        }
 }
