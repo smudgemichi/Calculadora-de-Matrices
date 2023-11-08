@@ -14,7 +14,7 @@ int main()
         system("cls");
 
         cout << "\t========== PIA ==========\n\n";
-        cout << "Matemáticas para los Videojuegos ii\n";
+        cout << "MatemÃ¡ticas para los Videojuegos ii\n";
         cout << "1.- Operaciones de matrices\n";
         cout << "2.- Matrices compuestas\n";
         cout << "3.- Generar nuevas coordenadas por cuaterniones\n";
@@ -46,15 +46,15 @@ int main()
             }
             break;
             case 2:
-            { // Matriz compuesta de un gráfico según angulos
+            { // Matriz compuesta de un grÃ¡fico segÃºn angulos
                 system("cls");
                 int Submenu_2;
                 do
                 {
-                    cout << "\t=== Matriz compuesta de un gráfico según angulos ===\n\n";
+                    cout << "\t=== Matriz compuesta de un grÃ¡fico segÃºn angulos ===\n\n";
 
-                    cout << "1.- Obtener la perspectiva de los puntos originales de las figuras geométricas\n";
-                    cout << "2.- Programador 2\n";
+                    cout << "1.- Obtener la perspectiva de los puntos originales de las figuras geomÃ©tricas\n";
+                    cout << "2.- Obtener matrices de rotaciÃ³n\n";
                     cout << "3.- Salir\n\n";
                     cin >> Submenu_2;
 
@@ -62,7 +62,7 @@ int main()
                     {
                     case 1: zperspectiva();
                         break;
-                    case 2:
+                    case 2: MatricesRotacion();
                         break;
                     }*/
 
