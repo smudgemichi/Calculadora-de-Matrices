@@ -1,5 +1,6 @@
-# Matemáticas para los Videojuegos ii
-## === Calculadora de Matrices || PIA || UANL ===
+# Calculadora de Matrices
+## Matemáticas para los Videojuegos ii
+**=== || PIA || UANL || FCFM || LMAD || ===**
 
 
 **Equipo:**
