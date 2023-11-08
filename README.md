@@ -17,5 +17,7 @@
 - Obtener matrices compuestas de un primitivo gráfico según ángulos dados.
 - Resolver matrices compuestas de un primitivo gráfico según ángulos dados.
 - Obtener la perspectiva de los puntos originales y los transformados con las matrices compuestas.
+### **Manual de usuario:**
+- <a href="https://uanledu-my.sharepoint.com/:p:/g/personal/roxanna_mendozag_uanl_edu_mx/EcWgpmA7vbpLgwb2ulVNdGgBvmi6ibotuu6xbKK3y8MA1w">Click aquí</a>
 
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /> <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white"/>
